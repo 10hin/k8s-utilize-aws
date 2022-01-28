@@ -28,3 +28,12 @@ managedNodeGroups:
     privateNetworking: true
     tags:
       Purpose: LearnEKS
+
+cloudWatch:
+  clusterLogging:
+    enableTypes:
+      - api
+      - audit
+      - authenticator
+      - controllerManager
+      - scheduler
